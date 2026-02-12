@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Quiz</title>
+</head>
+<body>
+
+<h2>Quiz</h2>
+<p id="q"></p>
+
+<button onclick="check('HTML')">HTML</button>
+<button onclick="check('CSS')">CSS</button>
+<button onclick="check('JS')">JS</button>
+
+<p id="result"></p>
+
+<script>
+  document.getElementById("q").innerText =
+    "Which language is used for styling web pages?";
+
+  function check(ans) {
+    if (ans === "CSS")
+      document.getElementById("result").innerText = "Correct!";
+    else
+      document.getElementById("result").innerText = "Wrong!";
+  }
+</script>
+
+</body>
+</html>
